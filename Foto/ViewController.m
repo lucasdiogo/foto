@@ -43,7 +43,7 @@
     UIImagePickerController * imagePicker = [UIImagePickerController new];
     
     imagePicker.delegate = self;
-    imagePicker.mediaTypes = @[kCIAttributeTypeImage];
+    imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:imagePicker.sourceType];
     
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -89,12 +89,12 @@
 
 - (IBAction)arrastar:(UIPanGestureRecognizer *)sender {
     
-    CGPoint translation = [sender translationInView:self.imageView];
+    CGPoint translation = [sender translationInView:self.logoImageView];
     
     if(sender.view) {
-        sender.view.center = CGPointMake(sender.view.center.x, sender.view.center.y);
+        sender.view.center = CGPointMake(sender.view.center.x + translation.x, sender.view.center.y + translation.y);
         
-        deslocamento = CGPointMake(deslocamento.x + translation.x, deslocamento.y + translation.y);
+//        deslocamento = CGPointMake(deslocamento.x + translacao.x, deslocamento.y + translacao.y);
         
     }
     
