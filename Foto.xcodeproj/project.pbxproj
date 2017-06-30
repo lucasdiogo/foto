@@ -13,6 +13,8 @@
 		AE678D601F0689EF00C61B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE678D5E1F0689EF00C61B31 /* Main.storyboard */; };
 		AE678D621F0689EF00C61B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE678D611F0689EF00C61B31 /* Assets.xcassets */; };
 		AE678D651F0689EF00C61B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE678D631F0689EF00C61B31 /* LaunchScreen.storyboard */; };
+		AE9BED051F068BD700B2C04E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9BED041F068BD700B2C04E /* CoreGraphics.framework */; };
+		AE9BED071F0696CC00B2C04E /* heineken-logo-9F83ECD0E8-seeklogo.com.png in Resources */ = {isa = PBXBuildFile; fileRef = AE9BED061F0696CC00B2C04E /* heineken-logo-9F83ECD0E8-seeklogo.com.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AE678D611F0689EF00C61B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE678D641F0689EF00C61B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE678D661F0689EF00C61B31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9BED041F068BD700B2C04E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE9BED061F0696CC00B2C04E /* heineken-logo-9F83ECD0E8-seeklogo.com.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heineken-logo-9F83ECD0E8-seeklogo.com.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9BED051F068BD700B2C04E /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				AE678D541F0689EF00C61B31 /* Foto */,
 				AE678D531F0689EF00C61B31 /* Products */,
+				AE9BED031F068BD700B2C04E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +72,7 @@
 				AE678D611F0689EF00C61B31 /* Assets.xcassets */,
 				AE678D631F0689EF00C61B31 /* LaunchScreen.storyboard */,
 				AE678D661F0689EF00C61B31 /* Info.plist */,
+				AE9BED061F0696CC00B2C04E /* heineken-logo-9F83ECD0E8-seeklogo.com.png */,
 				AE678D551F0689EF00C61B31 /* Supporting Files */,
 			);
 			path = Foto;
@@ -77,6 +84,14 @@
 				AE678D561F0689EF00C61B31 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE9BED031F068BD700B2C04E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE9BED041F068BD700B2C04E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9BED071F0696CC00B2C04E /* heineken-logo-9F83ECD0E8-seeklogo.com.png in Resources */,
 				AE678D651F0689EF00C61B31 /* LaunchScreen.storyboard in Resources */,
 				AE678D621F0689EF00C61B31 /* Assets.xcassets in Resources */,
 				AE678D601F0689EF00C61B31 /* Main.storyboard in Resources */,
@@ -312,6 +328,7 @@
 				AE678D6B1F0689EF00C61B31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
